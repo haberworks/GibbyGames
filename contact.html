@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Gibby Games</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <div id="header"></div>
+    <main>
+        <div class="page-header">
+          <h1>Contact Us</h1>
+          <nav class="breadcrumb">
+            <a href="index.html">Home</a> › Contact Us
+          </nav>
+        </div>
+      
+        <section class="page-container">
+          
+        <form id="contact-form">
+          <label for="name">Name:</label><br/>
+          <input type="text" name="user_name" id="name" required><br/><br/>
+      
+          <label for="email">Email:</label><br/>
+          <input type="email" name="user_email" id="email" required><br/><br/>
+      
+          <label for="message">Message:</label><br/>
+          <textarea name="message" id="message" rows="5" required></textarea><br/><br/>
+      
+          <button type="submit">Send</button>
+        </form>
+      
+        <p id="form-status"></p>
+      </main>
+      
+<div id="footer"></div>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
