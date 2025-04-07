@@ -72,44 +72,42 @@
     background-color: #6b4226;
   }
   
-  /* Hero Banner */
-  . {
-    background-image: url('../assets/images/Epicus.jpg');
-    background-position: center;
-    background-size: cover;
-    color: #2a1c0f;
-    padding: 4rem 2rem;
-    text-align: center;
-  }
-
-    .hero-banner {
+ /* Hero Banner */
+.hero-banner {
   position: relative;
+  background-image: url('../assets/images/Epicus.jpg');
+  background-position: center;
+  background-size: cover;
+  color: #2a1c0f;
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
-  .hero-banner-content {
-    background: rgba(255, 248, 236, 0.95);
-    border: 4px solid #a67c52;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 2rem;
-      display: flex;
+.hero-banner-content {
+  background: rgba(255, 248, 236, 0.95);
+  border: 4px solid #a67c52;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2rem;
+
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
-  }
-  
-  .hero-banner h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .hero-banner p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-  }
+}
+
+.hero-banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-banner p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
 
 .gibby-paws {
   height: 50px;
