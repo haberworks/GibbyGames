@@ -306,10 +306,10 @@
   
   /* Game Detail Page */
   .game-hero-wrapper {
-    position: relative;
-    margin-bottom: 3rem;
-    padding-top: 5rem; /* Try 5rem if needed */
-  }
+  position: relative;
+  padding-top: 5rem; /* Creates space for float without touching the H1 */
+  margin-bottom: 3rem;
+}
   
   .hero-image {
     border-bottom: 4px solid #a67c52;
@@ -321,15 +321,15 @@
   }
   
   .game-description-card {
-    position: relative;
-    background: #fff8ec;
-    border-left: 6px solid #a67c52;
-    padding: 2rem;
-    max-width: 800px;
-    margin: -100px auto 0 auto; /* ← this is what creates the floating effect */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-    z-index: 1;
-  }
+  position: relative;
+  background: #fff8ec;
+  border-left: 6px solid #a67c52;
+  padding: 2rem;
+  max-width: 800px;
+  margin: -100px auto 0 auto; /* This is what floats it */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 1;
+}
   
   .game-description-card h1 {
     font-size: 2rem;
