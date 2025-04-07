@@ -308,7 +308,7 @@
   .game-hero-wrapper {
   position: relative;
   margin-bottom: 3rem;
-  padding-top: 3rem; /* New line to push content away from the H1 */
+  padding-top: 4rem; /* New line to push content away from the H1 */
 }
   
   .hero-image {
