@@ -479,3 +479,11 @@
   border-left: 4px solid #a67c52;
   color: #4b2e1e;
 }
+
+/*header logo*/
+.gibby-paws {
+  height: 32px;
+  margin-left: 1rem;
+  opacity: 0.75;
+  vertical-align: middle;
+}
