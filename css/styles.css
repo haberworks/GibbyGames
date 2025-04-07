@@ -306,9 +306,10 @@
   
   /* Game Detail Page */
   .game-hero-wrapper {
-    margin-bottom: 3rem;
-    position: relative;
-  }
+  position: relative;
+  margin-bottom: 3rem;
+  padding-top: 3rem; /* New line to push content away from the H1 */
+}
   
   .hero-image {
     border-bottom: 4px solid #a67c52;
@@ -323,7 +324,7 @@
     background: #fff8ec;
     border-left: 6px solid #a67c52;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-    margin: -80px auto 0 auto;
+    margin: -100px auto 0 auto;
     max-width: 800px;
     padding: 2rem;
     position: relative;
