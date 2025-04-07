@@ -73,7 +73,7 @@
   }
   
   /* Hero Banner */
-  .hero-banner {
+  . {
     background-image: url('../assets/images/Epicus.jpg');
     background-position: center;
     background-size: cover;
@@ -81,7 +81,11 @@
     padding: 4rem 2rem;
     text-align: center;
   }
-  
+
+    .hero-banner {
+  position: relative;
+}
+
   .hero-banner-content {
     background: rgba(255, 248, 236, 0.95);
     border: 4px solid #a67c52;
@@ -90,6 +94,11 @@
     margin: 0 auto;
     max-width: 800px;
     padding: 2rem;
+      display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
   }
   
   .hero-banner h1 {
@@ -101,6 +110,16 @@
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
   }
+
+.gibby-paws {
+  height: 50px;
+  opacity: 0.25;
+  pointer-events: none;
+}
+
+.gibby-paws-left {
+  transform: scaleX(-1); /* Mirror the left-side paw image */
+}
   
   /* Homepage - Explore Section */
   .homepage-links {
