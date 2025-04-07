@@ -437,4 +437,45 @@
     line-height: 1.6;
     margin: 0;
   }
-  
+
+/* Epicus Lore */
+.epicus-lore {
+  margin-top: 2rem;
+  border-top: 2px solid #a67c52;
+  padding-top: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.epicus-lore summary {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #6b4226;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.epicus-lore summary:hover {
+  color: #8c5a38;
+  text-decoration: underline;
+}
+
+.lore-content {
+  margin-top: 1.5rem;
+}
+
+.lore-content h2,
+.lore-content h3 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #4b2e1e;
+}
+
+.lore-content blockquote {
+  font-style: italic;
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid #a67c52;
+  color: #4b2e1e;
+}
