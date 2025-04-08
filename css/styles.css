@@ -1,83 +1,89 @@
-/* General Reset */
+/* ------------------ */
+/* Base Reset & Body */
+/* ------------------ */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background: #f4f1e6;
-    color: #2a1c0f;
-    font-family: 'Georgia', serif;
-    line-height: 1.6;
-    padding: 1rem;
-  }
-  
-  /* Header & Nav */
-  .site-header {
-    background: #4b2e1e;
-    border-bottom: 4px solid #a67c52;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    color: #fff;
-    padding: 1rem 1.5rem;
-  }
-  
-  .header-inner {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: space-between;
-    margin: 0 auto;
-    max-width: 1200px;
-  }
-  
-  .brand-block {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .logo-text {
-    font-size: 2rem;
-    font-weight: bold;
-    line-height: 1;
-  }
-  
-  .tagline {
-    color: #ffdd99;
-    font-size: 0.9rem;
-    font-style: italic;
-  }
-  
-  nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    list-style: none;
-    margin: 0;
-    padding-left: 0;
-  }
-  
-  nav a {
-    background-color: transparent;
-    border-radius: 4px;
-    color: #ffdd99;
-    font-weight: bold;
-    padding: 0.25rem 0.5rem;
-    text-decoration: none;
-    transition: background-color 0.2s ease;
-  }
-  
-  nav a:hover {
-    background-color: #6b4226;
-  }
-  
- /* Hero Banner */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f4f1e6;
+  color: #2a1c0f;
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+/* ------------------ */
+/* Header & Navigation */
+/* ------------------ */
+.site-header {
+  background: #4b2e1e;
+  border-bottom: 4px solid #a67c52;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  padding: 1rem 1.5rem;
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.brand-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.tagline {
+  font-size: 0.9rem;
+  color: #ffdd99;
+  font-style: italic;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0;
+  padding-left: 0;
+}
+
+nav a {
+  color: #ffdd99;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+nav a:hover {
+  background-color: #6b4226;
+}
+
+/* ------------------ */
+/* Hero Banner */
+/* ------------------ */
 .hero-banner {
   position: relative;
   background-image: url('../assets/images/Epicus.jpg');
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   color: #2a1c0f;
   padding: 4rem 2rem;
   text-align: center;
@@ -91,7 +97,6 @@
   margin: 0 auto;
   max-width: 800px;
   padding: 2rem;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -116,347 +121,317 @@
 }
 
 .gibby-paws-left {
-  transform: scaleX(-1); /* Mirror the left-side paw image */
+  transform: scaleX(-1);
 }
-  
-  /* Homepage - Explore Section */
-  .homepage-links {
-    padding: 3rem 1rem;
-    text-align: center;
-  }
-  
-  .homepage-links h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-  }
-  
-  .link-card-grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    margin-top: 1rem;
-  }
-  
-  .link-card {
-    background-color: #fff8ec;
-    border: 3px solid #a67c52;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    color: #2a1c0f;
-    display: block;
-    padding: 1.5rem;
-    text-align: left;
-    text-decoration: none;
-    transition: transform 0.2s ease, background-color 0.2s ease;
-  }
-  
-  .link-card:hover {
-    background-color: #f1e2cc;
-    transform: translateY(-4px);
-  }
-  
-  .link-card h3 {
-    font-size: 1.3rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .link-card p {
-    font-size: 1rem;
-    line-height: 1.5;
-  }
-  
-  /* Call to Action */
-  .cta-section {
-    background: #fff8ec;
-    border-top: 2px solid #a67c52;
-    font-style: italic;
-    margin-top: 3rem;
-    padding: 3rem 1rem;
-    text-align: center;
-  }
-  
-  /* Page Header & Breadcrumb */
-  .page-header {
-    margin: 2rem auto 1.5rem auto;
-    max-width: 800px;
-    padding: 0 1rem;
-    text-align: center;
-  }
-  
-  .page-header h1 {
-    color: #6b4226;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .breadcrumb {
-    color: #5c4630;
-    font-size: 0.9rem;
-  }
-  
-  .breadcrumb a {
-    color: #6b4226;
-    text-decoration: none;
-  }
-  
-  .breadcrumb a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Reusable Container */
-  .page-container {
-    background: #fff8ec;
-    border-left: 5px solid #a67c52;
-    border-right: 5px solid #a67c52;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    margin: 0 auto;
-    max-width: 800px;
-    padding: 2rem 1rem;
-  }
-  
-  .page-container h1 {
-    color: #6b4226;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    text-align: center;
-  }
-  
-  .page-container p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 1.5rem;
-  }
-  
-  .page-container blockquote {
-    background: #f4e7d4;
-    border-left: 4px solid #a67c52;
-    font-size: 1.4rem;
-    font-style: italic;
-    margin: 2rem 0;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  .page-container form label {
-    font-weight: bold;
-  }
-  
-  .page-container input,
-  .page-container textarea {
-    border: 2px solid #a67c52;
-    border-radius: 6px;
-    font-family: inherit;
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    width: 100%;
-  }
-  
-  .page-container button {
-    background: #6b4226;
-    border: none;
-    border-radius: 6px;
-    color: #fff8ec;
-    cursor: pointer;
-    font-weight: bold;
-    padding: 0.75rem 1.25rem;
-    transition: background 0.2s ease;
-  }
-  
-  .page-container button:hover {
-    background: #8c5a38;
-  }
-  
-  #form-status {
-    color: #2a1c0f;
-    font-style: italic;
-    margin-top: 1rem;
-  }
-  
-  /* Gallery */
-  .gallery-grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    margin-top: 1rem;
-  }
-  
-  .gallery-grid img {
-    border: 4px solid #a67c52;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
-    height: auto;
-    transition: transform 0.2s ease;
-    width: 100%;
-  }
-  
-  .gallery-grid img:hover {
-    transform: scale(1.02);
-  }
-  
-  /* Downloads */
-  .downloads-list {
-    list-style: none;
-    margin-top: 1rem;
-    padding-left: 0;
-  }
-  
-  .downloads-list li {
-    margin-bottom: 1rem;
-  }
-  
-  .downloads-list a {
-    background: #fff8ec;
-    border-left: 4px solid #a67c52;
-    color: #2a1c0f;
-    display: inline-block;
-    font-weight: bold;
-    padding: 0.75rem 1rem;
-    text-decoration: none;
-    transition: background 0.2s ease;
-  }
-  
-  .downloads-list a:hover {
-    background: #f4e7d4;
-  }
-  
-  /* Game Detail Page */
-  .game-hero-wrapper {
+
+/* ------------------ */
+/* Homepage Sections */
+/* ------------------ */
+.homepage-links {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.homepage-links h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.link-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.link-card {
+  display: block;
+  background-color: #fff8ec;
+  border: 3px solid #a67c52;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: left;
+  color: #2a1c0f;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.link-card:hover {
+  background-color: #f1e2cc;
+  transform: translateY(-4px);
+}
+
+.link-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.link-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* ------------------ */
+/* CTA Section */
+/* ------------------ */
+.cta-section {
+  text-align: center;
+  font-style: italic;
+  padding: 3rem 1rem;
+  background: #fff8ec;
+  border-top: 2px solid #a67c52;
+  margin-top: 3rem;
+}
+
+/* ------------------ */
+/* Page Header + Breadcrumbs */
+/* ------------------ */
+.page-header {
+  max-width: 800px;
+  margin: 2rem auto 1.5rem auto;
+  padding: 0 1rem;
+  text-align: center;
   position: relative;
-  padding-top: 5rem; /* Creates space for float without touching the H1 */
-  margin-bottom: 3rem;
+  z-index: 2;
 }
-  
-  .hero-image {
-    border-bottom: 4px solid #a67c52;
-    display: block;
-    height: auto;
-    max-height: 500px;
-    object-fit: cover;
-    width: 100%;
-  }
-  
-  .game-description-card {
+
+.page-header h1 {
+  font-size: 2rem;
+  color: #6b4226;
+  margin-bottom: 0.5rem;
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  color: #5c4630;
+}
+
+.breadcrumb a {
+  color: #6b4226;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------ */
+/* Reusable Page Container */
+/* ------------------ */
+.page-container {
+  background: #fff8ec;
+  border-left: 5px solid #a67c52;
+  border-right: 5px solid #a67c52;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2rem 1rem;
+  text-align: left;
+}
+
+.page-container h1 {
+  font-size: 2rem;
+  color: #6b4226;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.page-container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.page-container blockquote {
+  font-style: italic;
+  font-size: 1.4rem;
+  background: #f4e7d4;
+  border-left: 4px solid #a67c52;
+  padding: 1rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.page-container form label {
+  font-weight: bold;
+}
+
+.page-container input,
+.page-container textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #a67c52;
+  border-radius: 6px;
+  font-family: inherit;
+  margin-bottom: 1rem;
+}
+
+.page-container button {
+  background: #6b4226;
+  color: #fff8ec;
+  font-weight: bold;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.page-container button:hover {
+  background: #8c5a38;
+}
+
+#form-status {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #2a1c0f;
+}
+
+/* ------------------ */
+/* Game Detail Page */
+/* ------------------ */
+.game-hero-wrapper {
+  position: relative;
+  padding-top: 6rem; /* buffer for float */
+  margin-bottom: 3rem;
+  z-index: 1;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 4px solid #a67c52;
+}
+
+.game-description-card {
   position: relative;
   background: #fff8ec;
   border-left: 6px solid #a67c52;
   padding: 2rem;
   max-width: 800px;
-  margin: -100px auto 0 auto; /* This is what floats it */
+  margin: -100px auto 0 auto;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-  z-index: 1;
+  z-index: 2;
 }
-  
-  .game-description-card h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .game-description-card p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-  }
-  
-  @media (max-width: 768px) {
-    .game-description-card {
-      margin-top: 1rem;
-      padding: 1.5rem;
-    }
-  }
-  
-  /* Game Cards */
-  .game-card-grid {
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    margin-top: 2rem;
-  }
-  
-  .game-card {
-    background-color: #fff8ec;
-    border: 4px solid #a67c52;
-    border-radius: 10px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    transition: transform 0.2s ease;
-  }
-  
-  .game-card:hover {
-    transform: scale(1.02);
-  }
-  
-  .game-card img {
-    height: auto;
-    object-fit: cover;
-    width: 100%;
-  }
-  
-  .card-content {
-    padding: 1rem;
-  }
-  
-  .card-content h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .card-content p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  /* Buttons */
-  .learn-more-btn {
-    background-color: #6b4226;
-    border-radius: 6px;
-    color: #fff8ec;
-    display: inline-block;
-    font-weight: bold;
-    margin-top: 0.5rem;
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    transition: background-color 0.2s ease;
-  }
-  
-  .learn-more-btn:hover {
-    background-color: #8c5a38;
-  }
-  
-  /* Footer */
-  .site-footer {
-    background-color: #4b2e1e;
-    border-top: 4px solid #a67c52;
-    box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.25);
-    color: #fff8ec;
-    margin-top: 4rem;
-    padding: 2rem 1rem;
-  }
-  
-  .footer-content {
-    margin: 0 auto;
-    max-width: 800px;
-    text-align: center;
-  }
-  
-  .footer-logo {
-    border: 3px solid #a67c52;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    margin-bottom: 1rem;
-    max-width: 100px;
-  }
-  
-  .site-footer p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin: 0;
-  }
 
-/* Epicus Lore */
+.game-description-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .game-description-card {
+    margin-top: 1rem;
+    padding: 1.5rem;
+  }
+}
+
+/* ------------------ */
+/* Game Cards (games.html) */
+/* ------------------ */
+.game-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.game-card {
+  background-color: #fff8ec;
+  border: 4px solid #a67c52;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.game-card:hover {
+  transform: scale(1.02);
+}
+
+.game-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* ------------------ */
+/* Downloads List */
+/* ------------------ */
+.downloads-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.downloads-list li {
+  margin-bottom: 1rem;
+}
+
+.downloads-list a {
+  background: #fff8ec;
+  padding: 0.75rem 1rem;
+  display: inline-block;
+  border-left: 4px solid #a67c52;
+  text-decoration: none;
+  font-weight: bold;
+  color: #2a1c0f;
+  transition: background 0.2s ease;
+}
+
+.downloads-list a:hover {
+  background: #f4e7d4;
+}
+
+/* ------------------ */
+/* Gallery Grid */
+/* ------------------ */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border: 4px solid #a67c52;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.02);
+}
+
+/* ------------------ */
+/* Epicus Lore Section */
+/* ------------------ */
 .epicus-lore {
   margin-top: 2rem;
   border-top: 2px solid #a67c52;
@@ -498,10 +473,34 @@
   color: #4b2e1e;
 }
 
-/*header logo*/
-.gibby-paws {
-  height: 32px;
-  margin-left: 1rem;
-  opacity: 0.75;
-  vertical-align: middle;
+/* ------------------ */
+/* Footer */
+/* ------------------ */
+.site-footer {
+  background-color: #4b2e1e;
+  color: #fff8ec;
+  padding: 2rem 1rem;
+  border-top: 4px solid #a67c52;
+  margin-top: 4rem;
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-logo {
+  max-width: 100px;
+  margin-bottom: 1rem;
+  border: 3px solid #a67c52;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.site-footer p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
 }
