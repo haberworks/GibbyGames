@@ -377,6 +377,21 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 
+.learn-more-btn {
+  background-color: #6b4226;
+  color: #fff8ec;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #8c5a38;
+}
 /* ------------------ */
 /* Downloads List */
 /* ------------------ */
