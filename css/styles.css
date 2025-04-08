@@ -294,7 +294,7 @@ nav a:hover {
 /* ------------------ */
 .game-hero-wrapper {
   position: relative;
-  padding-top: 6rem; /* buffer for float */
+  padding-top: 4rem; /* buffer for float */
   margin-bottom: 3rem;
   z-index: 1;
 }
