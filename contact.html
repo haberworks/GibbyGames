@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Contact - Gibby Games</title>
-  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <script>
+    fetch('partials/head.html')
+      .then(res => res.text())
+      .then(data => document.head.innerHTML += data);
+  </script>
 </head>
 <body>
     <div id="header"></div>
