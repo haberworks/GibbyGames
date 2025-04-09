@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gibby Games</title>
+
+  <meta name="description" content="Welcome to Gibby Games — makers of handcrafted strategy board games like Epicus." />
+  <meta property="og:title" content="Gibby Games" />
+  <meta property="og:description" content="Home of our legendary indie board game studio." />
+  <meta property="og:image" content="https://gibby.games/assets/images/GGLogo.jpg" />
+  <meta property="og:url" content="https://gibby.games/about.html" />
+  <meta property="og:type" content="website" />
+
   <script>
     fetch('partials/head.html')
       .then(res => res.text())
       .then(data => document.head.innerHTML += data);
   </script>
 </head>
+
 <body>
     <div id="header"></div>
     <main class="homepage">
