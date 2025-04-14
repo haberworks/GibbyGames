@@ -59,30 +59,31 @@
   <div id="footer"></div>
 
   <!-- EmailJS Library -->
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      // Initialize EmailJS
-      emailjs.init("Z9yGweyGia7Up6cAU");
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    // Initialize EmailJS
+    emailjs.init("Z9yGweyGia7Up6cAU");
 
-      const form = document.getElementById('contact-form');
-      const status = document.getElementById('form-status');
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
 
-      form.addEventListener('submit', function (e) {
-        e.preventDefault();
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
 
-        emailjs.sendForm('service_l1g0ket', 'template_ew74ac8', this)
-          .then(() => {
-            status.textContent = "Message sent successfully!";
-            form.reset();
-          }, (err) => {
-            console.error("EmailJS Error:", err);
-            status.textContent = "Failed to send message. Please try again later.";
-          });
-      });
-  </script>
+      emailjs.sendForm('service_l1g0ket', 'template_ew74ac8', this)
+        .then(() => {
+          status.textContent = "Message sent successfully!";
+          form.reset();
+        }, (err) => {
+          console.error("EmailJS Error:", err);
+          status.textContent = "Failed to send message.";
+        });
+    });
+  });
+</script>
 
-  <script src="js/main.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
