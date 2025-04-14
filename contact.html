@@ -9,45 +9,50 @@
   <meta property="og:title" content="Gibby Games - Contact" />
   <meta property="og:description" content="Contact Gibby Games — makers of handcrafted strategy board games like Epicus." />
   <meta property="og:image" content="https://gibby.games/assets/images/GGLogo.jpg" />
-  <meta property="og:url" content="https://gibby.games/about.html" />
+  <meta property="og:url" content="https://gibby.games/contact.html" />
   <meta property="og:type" content="website" />
 
-<link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
-<body>
-    <div id="header"></div>
-    <main>
-        <div class="page-header">
-          <h1>Contact Us</h1>
-          <nav class="breadcrumb">
-            <a href="index.html">Home</a> › Contact Us
-          </nav>
-        </div>
-      
-        <section class="page-container">
-          
-        <form id="contact-form">
-          <label for="name">Name:</label><br/>
-          <input type="text" name="user_name" id="name" required><br/><br/>
-      
-          <label for="email">Email:</label><br/>
-          <input type="email" name="user_email" id="email" required><br/><br/>
-      
-          <label for="message">Message:</label><br/>
-          <textarea name="message" id="message" rows="5" required></textarea><br/><br/>
-      
-          <button type="submit">Send</button>
-        </form>
-      
-        <p id="form-status"></p>
-      </main>
-      
-<div id="footer"></div>
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-<script src="js/main.js"></script>
-    <script>
+<body class="preload">
+  <div id="header"></div>
+
+  <main>
+    <div class="page-header">
+      <h1>Contact Us</h1>
+      <nav class="breadcrumb">
+        <a href="index.html">Home</a> › Contact Us
+      </nav>
+    </div>
+
+    <section class="page-container">
+      <form id="contact-form">
+        <label for="name">Name:</label><br/>
+        <input type="text" name="user_name" id="name" required><br/><br/>
+
+        <label for="email">Email:</label><br/>
+        <input type="email" name="user_email" id="email" required><br/><br/>
+
+        <label for="message">Message:</label><br/>
+        <textarea name="message" id="message" rows="5" required></textarea><br/><br/>
+
+        <button type="submit">Send</button>
+      </form>
+
+      <p id="form-status"></p>
+    </section>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+  <script>
     window.addEventListener('DOMContentLoaded', () => {
+      emailjs.init("YOUR_EMAILJS_USER_ID"); // replace with your actual EmailJS user ID
+
+      // Load GA and favicon from shared partials
       fetch('partials/head.html')
         .then(res => res.text())
         .then(data => {
@@ -56,7 +61,11 @@
           const tags = temp.querySelectorAll('link, meta, script');
           tags.forEach(tag => document.head.appendChild(tag));
         });
+
+      document.body.classList.remove('preload');
     });
   </script>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
