@@ -13,6 +13,18 @@
   <meta property="og:type" content="website" />
 
   <link rel="stylesheet" href="css/styles.css" />
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      fetch('partials/head.html')
+        .then(res => res.text())
+        .then(data => {
+          const temp = document.createElement('div');
+          temp.innerHTML = data;
+          const tags = temp.querySelectorAll('link, meta, script');
+          tags.forEach(tag => document.head.appendChild(tag));
+        });
+    });
+  </script>
 </head>
 
 <body class="preload">
