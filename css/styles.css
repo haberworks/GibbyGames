@@ -129,3 +129,454 @@ nav a:hover {
   transform: scaleX(-1);
 }
 
+/* ------------------ */
+/* Homepage Sections */
+/* ------------------ */
+.homepage-links {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.homepage-links h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.link-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.link-card {
+  display: block;
+  background-color: #fff8ec;
+  border: 3px solid #a67c52;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: left;
+  color: #2a1c0f;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.link-card:hover {
+  background-color: #f1e2cc;
+  transform: translateY(-4px);
+}
+
+.link-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.link-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* ------------------ */
+/* CTA Section */
+/* ------------------ */
+.cta-section {
+  text-align: center;
+  font-style: italic;
+  padding: 3rem 1rem;
+  background: #fff8ec;
+  border-top: 2px solid #a67c52;
+  margin-top: 3rem;
+}
+
+/* ------------------ */
+/* Page Header + Breadcrumbs */
+/* ------------------ */
+.page-header {
+  max-width: 800px;
+  margin: 2rem auto 1.5rem auto;
+  padding: 0 1rem;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  color: #6b4226;
+  margin-bottom: 0.5rem;
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  color: #5c4630;
+}
+
+.breadcrumb a {
+  color: #6b4226;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+/* ------------------ */
+/* Reusable Page Container */
+/* ------------------ */
+.page-container {
+  background: #fff8ec;
+  border-left: 5px solid #a67c52;
+  border-right: 5px solid #a67c52;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 2rem 1rem;
+  text-align: left;
+}
+
+.page-container h1 {
+  font-size: 2rem;
+  color: #6b4226;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.page-container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.page-container blockquote {
+  font-style: italic;
+  font-size: 1.4rem;
+  background: #f4e7d4;
+  border-left: 4px solid #a67c52;
+  padding: 1rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.page-container form label {
+  font-weight: bold;
+}
+
+.page-container input,
+.page-container textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #a67c52;
+  border-radius: 6px;
+  font-family: inherit;
+  margin-bottom: 1rem;
+}
+
+.page-container button {
+  background: #6b4226;
+  color: #fff8ec;
+  font-weight: bold;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.page-container button:hover {
+  background: #8c5a38;
+}
+
+#form-status {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #2a1c0f;
+}
+
+/* ------------------ */
+/* Game Detail Page */
+/* ------------------ */
+.game-hero-wrapper {
+  position: relative;
+  padding-top: 3rem; /* buffer for float */
+  margin-bottom: 3rem;
+  z-index: 1;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 4px solid #a67c52;
+}
+
+.game-description-card {
+  position: relative;
+  background: #fff8ec;
+  border-left: 6px solid #a67c52;
+  padding: 2rem;
+  max-width: 800px;
+  margin: -100px auto 0 auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  z-index: 2;
+}
+
+.game-description-card p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .game-description-card {
+    margin-top: 1rem;
+    padding: 1.5rem;
+  }
+}
+
+/* ------------------ */
+/* Game Cards (games.html) */
+/* ------------------ */
+.game-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.game-card {
+  background-color: #fff8ec;
+  border: 4px solid #a67c52;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.game-card:hover {
+  transform: scale(1.02);
+}
+
+.game-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.learn-more-btn {
+  background-color: #6b4226;
+  color: #fff8ec;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #8c5a38;
+}
+
+/* ------------------ */
+/* Downloads List */
+/* ------------------ */
+.downloads-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.downloads-list li {
+  margin-bottom: 1rem;
+}
+
+.downloads-list a {
+  background: #fff8ec;
+  padding: 0.75rem 1rem;
+  display: inline-block;
+  border-left: 4px solid #a67c52;
+  text-decoration: none;
+  font-weight: bold;
+  color: #2a1c0f;
+  transition: background 0.2s ease;
+}
+
+.downloads-list a:hover {
+  background: #f4e7d4;
+}
+
+/* ------------------ */
+/* Gallery Grid */
+/* ------------------ */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  border: 4px solid #a67c52;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.02);
+}
+
+/* ------------------ */
+/* Epicus Lore Section */
+/* ------------------ */
+.epicus-lore {
+  margin-top: 2rem;
+  border-top: 2px solid #a67c52;
+  padding-top: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.epicus-lore summary {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #6b4226;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.epicus-lore summary:hover {
+  color: #8c5a38;
+  text-decoration: underline;
+}
+
+.lore-content {
+  margin-top: 1.5rem;
+}
+
+.lore-content h2,
+.lore-content h3 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #4b2e1e;
+}
+
+.lore-content blockquote {
+  font-style: italic;
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 4px solid #a67c52;
+  color: #4b2e1e;
+}
+
+/* ------------------ */
+/* Footer */
+/* ------------------ */
+.site-footer {
+  background-color: #4b2e1e;
+  color: #fff8ec;
+  padding: 2rem 1rem;
+  border-top: 4px solid #a67c52;
+  margin-top: 4rem;
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-logo {
+  max-width: 100px;
+  margin-bottom: 1rem;
+  border: 3px solid #a67c52;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.site-footer p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* ------------------ */
+/* Image Modal (Gallery) */
+/* ------------------ */
+.image-modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.9);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.image-modal img {
+  max-width: 90%;
+  max-height: 80vh;
+  border: 5px solid #a67c52;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #000;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  color: #fff8ec;
+  font-size: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.modal-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 3rem;
+  color: #fff8ec;
+  cursor: pointer;
+  padding: 0 1rem;
+}
+
+.modal-nav.left {
+  left: 2rem;
+}
+
+.modal-nav.right {
+  right: 2rem;
+}
