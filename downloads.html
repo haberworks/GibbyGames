@@ -12,20 +12,20 @@
   <meta property="og:url" content="https://gibby.games/about.html" />
   <meta property="og:type" content="website" />
 
-<link rel="stylesheet" href="css/styles.css" />
-      <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      fetch('partials/head.html')
-        .then(res => res.text())
-        .then(data => {
-          const temp = document.createElement('div');
-          temp.innerHTML = data;
-          const tags = temp.querySelectorAll('link, meta, script');
-          tags.forEach(tag => document.head.appendChild(tag));
-        });
-    });
-  </script>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
 
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQFXWB9GC5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YQFXWB9GC5');
+  </script>
 </head>
 
 <body>
