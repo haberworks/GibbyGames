@@ -11,19 +11,20 @@
   <meta property="og:image" content="https://gibby.games/assets/images/GGLogo.jpg" />
   <meta property="og:url" content="https://gibby.games/about.html" />
   <meta property="og:type" content="website" />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
 
-<link rel="stylesheet" href="css/styles.css" />
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YQFXWB9GC5"></script>
   <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      fetch('partials/head.html')
-        .then(res => res.text())
-        .then(data => {
-          const temp = document.createElement('div');
-          temp.innerHTML = data;
-          const tags = temp.querySelectorAll('link, meta, script');
-          tags.forEach(tag => document.head.appendChild(tag));
-        });
-    });
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-YQFXWB9GC5');
   </script>
 </head>
 
