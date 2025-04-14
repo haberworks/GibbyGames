@@ -12,11 +12,7 @@
   <meta property="og:url" content="https://gibby.games/about.html" />
   <meta property="og:type" content="website" />
 
-  <script>
-    fetch('partials/head.html')
-      .then(res => res.text())
-      .then(data => document.head.innerHTML += data);
-  </script>
+<link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
@@ -52,5 +48,17 @@
       </main>
 <div id="footer"></div>
 <script src="js/main.js"></script>
+    <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      fetch('partials/head.html')
+        .then(res => res.text())
+        .then(data => {
+          const temp = document.createElement('div');
+          temp.innerHTML = data;
+          const tags = temp.querySelectorAll('link, meta, script');
+          tags.forEach(tag => document.head.appendChild(tag));
+        });
+    });
+  </script>
 </body>
 </html>
