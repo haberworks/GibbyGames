@@ -13,6 +13,18 @@
   <meta property="og:type" content="website" />
 
   <link rel="stylesheet" href="css/styles.css" />
+      <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      fetch('partials/head.html')
+        .then(res => res.text())
+        .then(data => {
+          const temp = document.createElement('div');
+          temp.innerHTML = data;
+          const tags = temp.querySelectorAll('link, meta, script');
+          tags.forEach(tag => document.head.appendChild(tag));
+        });
+    });
+  </script>
 </head>
 
 <body class="preload">
@@ -69,19 +81,6 @@
             status.textContent = "Failed to send message. Please try again later.";
           });
       });
-
-      // Inject shared head partials
-      fetch('partials/head.html')
-        .then(res => res.text())
-        .then(data => {
-          const temp = document.createElement('div');
-          temp.innerHTML = data;
-          const tags = temp.querySelectorAll('link, meta, script');
-          tags.forEach(tag => document.head.appendChild(tag));
-        });
-
-      document.body.classList.remove('preload');
-    });
   </script>
 
   <script src="js/main.js"></script>
